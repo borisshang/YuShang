@@ -6,6 +6,36 @@
 	<title>Yu Shang-Project 1</title>
 	<style>
 
+		::-webkit-scrollbar {
+			width: 20px;
+		}
+
+		::-webkit-scrollbar-track {
+			box-shadow: inset 0 0 5px grey; 
+			border-radius: 10px;
+		}
+		
+		::-webkit-scrollbar-thumb {
+			background: darkgreen; 
+			border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background: darkolivegreen; 
+		}
+		body {
+			background-color: rgb(144, 190, 160);
+		}
+		
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
 		.navBar {
 			position: fixed;
 			top: 0;
@@ -37,7 +67,79 @@
 			color: white;
 		}
 
-		@media(max-width:600px) {
+		.title-container {
+			margin-top: 120px;
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.title-container h1 {
+			background-image: linear-gradient(45deg, #a4e69e, #015839);
+
+		}
+
+		.project-container {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			padding: 20px;
+		}
+
+		.project-container h3 {
+            font-size: 20px;
+            color: #007BFF;
+        }
+
+
+		@media(max-width: 600px) {
+			h1 {
+				font-size: 15px;
+			}
+
+			ul {
+				list-style-type: square;
+				margin-left: 10px;
+			}
+
+			li {
+				margin-bottom: 5px;
+				font-size: 10px;
+			}
+
+			.navBar {
+				height: 70px;
+			}
+
+			.navBar h1 {
+				font-size: 15px;
+			}
+
+			.navBar h2 {
+				font-size: 13px;
+			}
+
+			.navBar h3 {
+				font-size: 10px;
+			}
+
+			.title-container {
+				margin-top: 90px;
+				padding: 5px;
+			}
+
+			.project-container {
+				padding: 10px;
+			}
+
+			.project-container h3 {
+				font-size: 10px;
+			}
+
+			.project-container p {
+				font-size: 10px;
+			}
 			
 		}
 
@@ -52,6 +154,57 @@
             <a href="../Contact/index.html"><h3>Contact</h3></a>
             <a href="../AboutMe/index.html"><h3>About Me</h3></a>
     </div>
+
+	<div class="title-container">
+		<h1>Academic Projects</h1>
+	</div>
+
+	<div class="project-container">
+		<div class="project-recipe">
+			<h3>Food for Thought - Recipe Sharing Platform Website</h3>
+			<p>Jan 2023 - Apr 2023</p>
+			<ul>
+				<li>Developed a dynamic recipe sharing platform, supporting users to create, manage, and interact with recipes, including search, liking, and reviewing 
+					functionalities, using JDBC, JSP, and MySQL.</li>
+				<li>Designed and built a relational database in MySQL using <strong>SQL</strong>, loading over 200k data entries.</li>
+				<li>Implemented <strong>Java</strong> back-end by constructing data access layer using <strong>JDBC</strong> for database interactions.</li>
+				<li>Created user interface(UI) and developed web application using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Boostrap</strong>.</li>
+			</ul>
+		</div>
+		
+		<div class="project-diabete">
+			<h3>Diabetes Prediction for LifeStory Health, Inc.</h3>
+			<p>Sep 2022 - Dec 2022</p>
+			<ul>
+				<li>A python-based vision screening tool to predict diabetes among patients for LifeStory Health, Inc.</li>
+				<li>Conducted <strong>Exploratory Data Analysis (EDA)</strong> on the raw data using <strong>Python</strong> and <strong>Excel</strong> to analyze and 
+					visualize the data, gaining valuable insights into its characteristics.</li>
+				<li>Performed <strong>correlation analysis</strong> to establish the relationship between various diseases and diabetes, which helped identify significant factors 
+					contributing to diabetes.</li>
+				<li>Developed predictive models for diabetes using a variety of machine learning algorithms, including <strong>Logistic Regression</strong>, <strong>Decision 
+					Trees</strong>, <strong>KNN</strong>, and <strong>Random Forest</strong>, to estimate the likelihood of diabetes based on patient data.</li>
+				<li>Evaluated model performance using the <strong>root mean square error (RMSE)</strong> metric, fine-tuning and enhancing the models to improve their accuracy 
+					and reliability for diabetes prediction.</li>
+			</ul>
+		</div>
+
+		<div class="project-pq">
+			<h3>Priority Queuing System (Triage) for Hospital Emergency System</h3>
+			<p>Oct 2021 - Dec 2021</p>
+			<ul>
+				<li>A <strong>C++</strong> based web application for hospital emergency room management.</li>
+				<li>Developed a web application for hospital emergency room management using C++, powered by CLion, to stream patient prioritization and information display.</li>
+				<li>Designed <strong>Restful</strong> APIs for efficient patient priority management and system information display.</li>
+				<li>Established a MySQL relational database on <strong>Amazon RDS</strong> to securely store real-time data, employing a vector-based approach to
+					 monitor patients and determine their priority levels.</li>
+				<li>Implemented a system that visualizes the waiting room by utilizing a <strong>binary heap</strong>.</li>
+				<li>Used <strong>Git</strong> for version control and successfully deployed the server to <strong>AWS EC2</strong> using the <strong>CodeDeploy</strong> service for 
+					seamless accessibility.</li>
+			</ul>
+		</div>
+
+    </div>
+
 
 </body>
 </html>
