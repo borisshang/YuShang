@@ -1,0 +1,55 @@
+
+.introduction {
+    margin-top: 150px;
+    width: 800px;
+    line-height: 2;
+
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.snow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#text-style {
+    font-size: 20px;
+    font-style: italic;
+}
+
+#snow-img {
+    margin-top: 50px;
+    height: 800px;
+    width: auto;
+    padding: 10px;
+}
+
+@media(max-width: 600px) {
+
+    span {
+        font-size: 10px;
+    }
+
+    .introduction {
+        margin-top: 90px;
+        width: 400px;
+        line-height: 1.5;
+    }
+
+    #snow-img {
+        margin-top: 25px;
+        height: 400px;
+        width: auto;
+        padding: 5px;
+    }	
+
+    #text-style {
+        font-size: 10px;
+    }
+}

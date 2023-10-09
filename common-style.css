@@ -1,0 +1,76 @@
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgreen; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkolivegreen; 
+}
+
+body {
+    background-color: rgb(144, 190, 160);
+}
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(41, 235, 138);
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    border: 3px solid darkgreen;
+}
+
+.navBar h1 {
+    color: yellow;
+}
+
+.navBar h2 {
+    color: white;
+}
+
+.navBar a {
+    color: black;
+}
+
+.navBar a:hover {
+    color: white;
+}
+
+@media(max-width: 600px) {
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .navBar {
+        height: 70px;
+    }
+
+    .navBar h1 {
+        font-size: 15px;
+    }
+
+    .navBar h2 {
+        font-size: 13px;
+    }
+
+    .navBar h3 {
+        font-size: 10px;
+    }
+
+}

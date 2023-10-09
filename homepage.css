@@ -1,0 +1,131 @@
+
+.welcome-container {
+    margin-top: 110px;
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 1fr;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.husky-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#my-selfie {
+    width: 150px;
+    height: 150px;
+    margin: 0px;
+    justify-self: center;
+    align-self: center;
+}
+
+#welcome {
+    font-size: 30px;
+    font: bold;
+    transition: 0.5s;
+    color: darkgreen;
+}
+
+#welcome:hover {
+    font-size: 50px;
+    font: bold;
+    color: orange
+}
+
+#experience {
+    margin-top: 50px;
+}
+
+#school-img {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    margin: 50px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li a {
+    color: darkblue;
+}
+
+li strong {
+    font-weight: bold;
+}
+
+ul {
+    margin-bottom: 80px;
+}
+
+
+
+@media(max-width: 600px) {
+
+    table {
+        margin-bottom: 10px;
+    }
+    
+    th, td {
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    ul {
+        margin-bottom: 40px;
+    }
+
+    li {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .welcome-container {
+    margin-top: 80px;
+    height: 80px;
+    }
+
+    #my-selfie {
+        width: 50px;
+        height: 50px;
+    }
+
+    #welcome {
+    font-size: 15px;
+    }
+
+    #welcome:hover {
+        font-size: 20px;
+    }
+
+    #school-img {
+        width: 75px;
+        height: 75px;
+        margin: 10px;
+    }
+
+    #experience {
+        margin-top: 25px;
+    }
+}
